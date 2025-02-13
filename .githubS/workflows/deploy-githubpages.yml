@@ -1,0 +1,63 @@
+
+name: Deployer sur githubpages
+
+
+on:
+  push:
+    paths:
+      - 'Frontend/**'
+    branches:
+      - statique 
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  actions: read
+  repository-projects: read
+  deployments: write  
+
+jobs:
+
+  build:
+    runs-on: windows-latest 
+
+    steps:
+
+
+      - name: Verifier code du depot
+        uses: actions/checkout@v4
+
+      - name: configurer Node
+
+        uses: actions/setup-node@v4
+
+      - name: Installer dependances
+        run: npm ci
+        working-directory: Frontend
+
+      - name: construire le projet
+        run: npm run build
+        working-directory: Frontend
+
+      - name: 📂 Vérifier les fichiers générés
+        run: ls -R Frontend/dist
+
+      - name: 📤 Création du GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./Frontend/dist
+      
+
+  deploy:  
+    needs: build
+    runs-on: windows-latest
+
+    steps:
+      
+      - name: 🚀 Déploiement sur GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: 🔗 URL du site déployé
+        run: echo "🔗 Votre site est disponible à ${{ steps.deployment.outputs.page_url }}"

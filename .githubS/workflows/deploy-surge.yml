@@ -1,0 +1,49 @@
+name: Deploy sur surge
+
+on:
+  push:
+    paths:
+      - 'Frontend/**'
+    branches:
+      - statique 
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  actions: read
+  repository-projects: read
+  deployments: write  
+
+jobs:
+
+  build_and_deploy:
+    runs-on: windows-latest
+
+    steps:
+
+      - name: code du depot
+        uses: actions/checkout@v4
+
+      - name: instalation Node
+        uses: actions/setup-node@v4
+
+      - name: installer dependances
+        run: npm ci
+        working-directory: Frontend
+
+      - name: instalation biome
+        uses: biomejs/setup-biome@v2
+
+      - name: 🔍 Vérification Biome
+        run: npx biome ci --ignore-path .biomeignore
+
+      - name: construire projet
+        run: npm run build
+        working-directory: Frontend
+
+      - name: instalation de surge
+        run: npm install -g surge
+
+      # - name: deployer sur Surge
+      #   run: surge ./Frontend/dist ${{ secrets.SURGE_DOMAIN}} --token ${{ secrets.SURGE_TOKEN}}

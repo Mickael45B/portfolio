@@ -1,0 +1,49 @@
+
+@mixin xs {
+    @media (min-width: #{$screen-xs-max}) {
+        @content;
+    }
+ }
+
+ @mixin s {
+    @media (min-width: #{$screen-s-min}) {
+        @content;
+    }
+ }
+
+ @mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+
+ @mixin m {
+    @media (min-width: #{$screen-m-min}) {
+        @content;
+    }
+ }
+
+ @mixin l {
+    @media (min-width: #{$screen-l-min}) {
+        @content;
+    }
+ }
+
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
+
+ @mixin xxl {
+    @media (min-width: #{$screen-xxl-min}) {
+        @content;
+    }
+ }
+
+ /* UTILISATION (exemple): 
+
+ @include sm {
+        padding: 0 20px;
+    }
+*/

@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.navigation {
+  display: flex;
+}
+.main {
+  height: 500px; /* temporaire  */
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.contenairFooter {
+  width: 100%;
+}
+
+.mentionLegales {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.miseEnValeur,
+.reseauxSociaux,
+.createurSite {
+  grid-column: 1 / -1;
+}

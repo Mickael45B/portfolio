@@ -1,0 +1,24 @@
+
+// ==> Un bloc d'instruction par police
+/*
+
+EXEMPLE : 
+
+@font-face {
+    font-display: swap; // Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. 
+    font-family: 'Alumni Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/alumni-sans-v18-latin-regular.woff2')
+      format('woff2');
+  }
+
+*/
+
+//definition de l'ordre des polices
+
+$policeDefaut:"";
+
+$policePrincipale:"Roboto", sans-serif;
+$policeSecondaire:"Roboto", sans-serif;
+$policeTertiaire:"Roboto", sans-serif;
