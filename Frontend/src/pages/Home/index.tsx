@@ -1,10 +1,10 @@
 // import { useState } from "react";
-import './index.css';
+// import './index.css';
 
 function Home() {
   return (
     <>
-      <main className="main">
+      <main className="main flex flex-col items-center w-full">
         <p>"Un backend solide pour des projets qui tiennent la route."</p>
         <p>Passionné par l’optimisation et la logique métier, je développe des applications robustes et évolutives. Autodidacte depuis 10 ans, j'aime partager mes connaissances et rendre le développement accessible aux nouvelles générations.</p>
       </main>
