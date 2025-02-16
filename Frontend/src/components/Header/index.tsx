@@ -26,8 +26,8 @@ const CustomNavLink = ({ to, children }: CustomNavLinkProps) => {
 
 function Header() {
   return (
-    <div className="p-4 text-center flex w-full place-content-between">
-      <span></span>
+    <div className="p-4 text-center flex w-full place-content-between bg-amber-900/10">
+      <h1 className="flex flex-col"><span>portfolio</span> <span>Brissot Michael</span></h1>
       <nav className="flex gap-4">
         <ul className="grid grid-cols-5 gap-4">
           <CustomNavLink to="/">Accueil</CustomNavLink>

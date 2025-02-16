@@ -3,7 +3,7 @@
 
 function Footer() {
   return <>
-      <footer className="footer w-full">
+      <footer className="footer w-full  bg-amber-900/10">
         <div className="contenairFooter flex flex-col items-center">
           <div className="miseEnValeur flex w-full place-content-center">-- mise en valeur --</div>
           <div className="flex w-full place-content-around">

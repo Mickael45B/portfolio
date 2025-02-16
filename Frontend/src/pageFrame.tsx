@@ -8,7 +8,8 @@ import RoutesPubic from "./routes/AppRoutes";
 function App() {
   return (
     <>
-      <div className="m-0 p-4 box-border flex flex-col items-center h-screen bg-cover bg-center place-content-between bg-[url(../public/fond.jpeg)]">
+      {/* <div className="m-0 p-4 box-border flex flex-col items-center h-screen bg-cover bg-center place-content-between bg-[url(../fond.jpeg)]"> */}
+      <div className="m-0 p-4 box-border flex flex-col items-center h-screen bg-cover bg-center place-content-between "> 
       <Header />
         <RoutesPubic />
       <Footer />
