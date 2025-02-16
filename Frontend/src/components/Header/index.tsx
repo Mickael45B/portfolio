@@ -37,7 +37,15 @@ function Header() {
           <CustomNavLink to="/project">(temporaire)</CustomNavLink>
         </ul>
       </nav>
-      <span></span>
+      <div>
+        <div>
+          <span>derniere mise à jour :</span>
+          <span>16/02/2025</span>
+        </div>
+        <div>
+          sombre/clair
+        </div>
+      </div>
     </div>
   );
 }
