@@ -13,7 +13,7 @@ function Home() {
             <p className="w-4xl leading-7 flex text-center font-sans">Passionné par l’optimisation et la logique métier, je développe des applications robustes et évolutives. Autodidacte depuis 10 ans, j'aime partager mes connaissances et rendre le développement accessible aux nouvelles générations.</p>
           </div>
         </div>
-        <div className="basis-2/5 w-full h-full p-8">
+        <div className="basis-2/5 w-full h-full p-8 ">
         <div className=" w-full h-full bg-[url(../partie-droite.jpg)] bg-cover bg-center"></div>
         </div>
       </main>

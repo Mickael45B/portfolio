@@ -10,8 +10,8 @@ type CustomNavLinkProps = {
 };
 
 const CustomNavLink = ({ to, children }: CustomNavLinkProps) => {
-  const baseClass = "text-blue-500 hover:text-blue-700 flex justify-center items-center";
-  const activeClass = "active text-white rounded-full flex drop-shadow-xl justify-center p-1 bg-radial-[at_25%_25%] from-white to-zinc-900 to-75%";
+  const baseClass = "text-blue-500 hover:text-blue-700 flex justify-center items-center ";
+  const activeClass = "active text-white rounded-full flex drop-shadow-2xl justify-center p-1 bg-radial-[at_25%_25%] from-white to-zinc-900 to-75%";
 
   return (
     <NavLink

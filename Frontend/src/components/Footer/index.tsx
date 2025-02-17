@@ -18,13 +18,20 @@ function Footer() {
           </div>
           <div className="reseauxSociaux flex w-full place-content-center items-center h-10 p-2 ">
             <span className="p-2">
-              <Link to="https://www.facebook.com/michael.dev.45000"><TiSocialFacebook /></Link>
+              <Link to="https://www.facebook.com/michael.dev.45000">
+                <TiSocialFacebook />
+              </Link>
             </span>
             <span className="p-2">
               <Link to="https://github.com/Mickael45B">
-              <SlSocialGithub /></Link></span>
+                <SlSocialGithub />
+              </Link>
+            </span>
             <span className="p-2">
-              <Link to="https://www.linkedin.com/in/michael-brissot"><TiSocialLinkedin /></Link></span>
+              <Link to="https://www.linkedin.com/in/michael-brissot">
+                <TiSocialLinkedin />
+              </Link>
+            </span>
           </div>
           <div className="createurSite flex w-full place-content-center"></div>
         </div>
