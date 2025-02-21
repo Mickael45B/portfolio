@@ -40,7 +40,7 @@ function Header() {
       <div>
         <div>
           <span>derniere mise à jour :</span>
-          <span>16/02/2025</span>
+          <span>21/02/2025</span>
         </div>
         <div>
           sombre/clair
