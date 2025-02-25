@@ -46,8 +46,8 @@ function AllProjects() {
             </div>
             <div className="flex text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, totam! Itaque repellat eum consequuntur quidem, nam porro voluptates placeat sunt, modi delectus, cupiditate deserunt? Neque magni molestias provident necessitatibus omnis?</div>
             <div  className="flex justify-around w-full">
-              <span>bouton</span>
-              <span>bouton</span>
+              <span>bouton GIT</span>
+              <span>bouton site</span>
             </div>
           </div>
 
